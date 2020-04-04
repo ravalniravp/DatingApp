@@ -14,18 +14,10 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  registerToggle() { 
-    this.registerMode = true;
+  registerToggle() {
+    this.registerMode = !this.registerMode;
   }
 
-  getValues() {
-    this.http.get('http://localhost:5000/api/values').subscribe(
-      response => {
-        this.values = response;
-      }, error => {
-        console.log(error);
-      });
-  }
 
   cancelRegisterMode(registerMode: boolean) {
     this.registerMode = registerMode;

@@ -60,6 +60,10 @@ namespace DatingApp.API
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                
+            }
 
             // app.UseHttpsRedirection();
             app.UseAuthentication();
