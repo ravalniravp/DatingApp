@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace DatingApp.API.DTOS
 {
@@ -9,6 +10,6 @@ namespace DatingApp.API.DTOS
         public string Description { get; set; }
         public DateTime DateAdded { get; set; }
         public bool isMainp { get; set; }
-
+        
     }
 }
