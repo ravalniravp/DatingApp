@@ -1,11 +1,10 @@
 using System;
-using System.Collections.Generic;
 
 namespace DatingApp.API.DTOS
 {
-    public class PhotosForDetailedDTO
+    public class PhotoforReturnDTO
     {
-        public int Id { get; set; }
+         public int Id { get; set; }
 
         public string Url { get; set; }
 
@@ -14,5 +13,6 @@ namespace DatingApp.API.DTOS
         public DateTime DateAdded { get; set; }
 
         public bool isMainp { get; set; }
+        public string PublicId { get; set; }
     }
 }

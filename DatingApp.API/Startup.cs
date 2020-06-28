@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using AutoMapper;
+using DatingApp.API.Helpers;
 
 namespace DatingApp.API
 {
@@ -40,6 +41,8 @@ namespace DatingApp.API
                                 .AllowAnyMethod();
                 });
             });
+
+            services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
 
             services.AddControllers()
             .AddNewtonsoftJson(opt => {
